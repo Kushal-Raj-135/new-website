@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFarm Assistant - Sustainable Farming Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aqi-styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="EcoFarm Logo" class="logoo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Products</a>
+                        <div class="dropdown-menu">
+                            <a href="crop/crop-rotation.html">Crop Rotation Assistant</a>
+                            <a href="https://biofuel-one.vercel.app/" target="_blank">Biofuel</a>
+                            <a href="https://biobloom1.vercel.app/" target="_blank">Smart Farm</a>
+                        </div>
+                    </li>
+                    <li><a href="#info-section">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="auth-buttons">
+                        <a href="/login" class="login-link">Login</a>
+                        <a href="/register" class="register-link">Register</a>
+                    </li>
+                    <li class="user-menu" style="display: none;">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                Welcome, <span class="user-name"></span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="/profile" class="edit-profile">
+                                    <i class="fas fa-user-edit"></i> Edit Profile
+                                </a>
+                                <a href="#" class="logout-btn">
+                                    <i class="fas fa-sign-out-alt"></i> Logout
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Sustainable Farming for Cleaner Air</h2>
+                    <p>Harness the power of AI to make farming smarter and greener.
+                        Get real-time insights to reduce pollution and boost crop yields.
+                        Optimize resources naturally while protecting the environment.
+                        Sustainable agriculture starts with smart decisions!.</p>
+                    <button class="custom-btn" id="get-started-btn" onclick="document.querySelector('.features').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+                </div>
+                <div class="hero-image">
+                    <img src="./plant.jpg" alt="Sustainable Farming" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80';">
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="products">
+            <div class="container">
+                <h2 class="section-title">Our Products</h2>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌱</div>
+                        <h3>BioBloom Smart Farm</h3>
+                        <p>AI-powered smart farming solution that optimizes resource usage, monitors crop health, and provides real-time insights for sustainable agriculture.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>BioFuel</h3>
+                        <p>Innovative biofuel production system that converts agricultural waste into clean energy, reducing carbon emissions and providing alternative fuel solutions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌿</div>
+                        <h3>EcoFarm Assistant</h3>
+                        <p>Comprehensive farming companion that monitors air quality, provides sustainable farming recommendations, and helps maintain environmental balance.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>AQI-Based Alerts</h3>
+                        <p>Get real-time alerts and recommendations for optimal farming activities based on current air quality levels, helping reduce exposure to harmful conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section" id="info-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose BioBloom Solutions?</h2>
+                <div class="info-grid">
+                    <div class="info-card impact">
+                        <div class="info-icon">🌟</div>
+                        <h3>Innovation</h3>
+                        <p>Our AI-powered solutions combine cutting-edge technology with sustainable practices, making us the leader in smart farming and environmental solutions.</p>
+                    </div>
+                    <div class="info-card solution">
+                        <div class="info-icon">🎯</div>
+                        <h3>Proven Results</h3>
+                        <p>Our integrated approach has helped farmers achieve remarkable results: improved yields, reduced costs, and significant environmental impact reduction across all implementations.</p>
+                    </div>
+                    <div class="info-card benefits">
+                        <div class="info-icon">💪</div>
+                        <h3>Key Advantages</h3>
+                        <ul>
+                            <li>Real-time monitoring and insights</li>
+                            <li>Integrated smart farming solutions</li>
+                            <li>Sustainable waste-to-energy conversion</li>
+                            <li>24/7 environmental tracking</li>
+                        </ul>
+                    </div>
+                    <div class="info-card science">
+                        <div class="info-icon">🔬</div>
+                        <h3>Advanced Technology</h3>
+                        <p>Our solutions leverage machine learning, IoT sensors, and advanced analytics to provide precise, actionable insights for optimal farming and environmental management.</p>
+                    </div>
+                    <div class="info-card aqi-management">
+                        <div class="info-icon">🌿</div>
+                        <h3>Environmental Impact</h3>
+                        <ul>
+                            <li>40% reduction in environmental pollution</li>
+                            <li>60% decrease in resource wastage</li>
+                            <li>Sustainable energy production</li>
+                            <li>Enhanced biodiversity protection</li>
+                            <li>Improved air quality management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Customer Satisfaction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50%</span>
+                        <span class="stat-label">Cost Reduction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">40%</span>
+                        <span class="stat-label">Efficiency Increase</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">60%</span>
+                        <span class="stat-label">Environmental Impact</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="aqi-comparison">
+            <div class="container">
+                <h2 class="section-title">Growth Impact Analysis</h2>
+                <div class="graph-container">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="aqi-info-cards">
+                    <div class="aqi-info-card impact-card">
+                        <div class="impact-icon">🌱</div>
+                        <h4>Understanding the Impact</h4>
+                        <p>This graph demonstrates how BioBloom's smart farming solutions significantly enhance plant growth and health compared to traditional farming methods. Our integrated approach combines AI-driven monitoring, optimal resource allocation, and sustainable practices.</p>
+                    </div>
+                    <div class="aqi-info-card impact-card">
+                        <div class="impact-icon">📈</div>
+                        <h4>Growth Metrics</h4>
+                        <p>Our solutions have consistently shown remarkable improvements in key agricultural metrics, demonstrating superior performance in crop yield, resource efficiency, and overall farm productivity compared to traditional methods.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="aqi-monitor">
+            <div class="container">
+                <h2 class="section-title">Current Air Quality Index</h2>
+                <div class="aqi-container">
+                    <div class="aqi-scale">
+                        <div class="scale-item">
+                            <span class="scale-color" style="background: #00e400;"></span>
+                            <span class="scale-label">Good</span>
+                            <span class="scale-range">(0-50)</span>
+                        </div>
+                        <div class="scale-item">
+                            <span class="scale-color" style="background: #ffff00;"></span>
+                            <span class="scale-label">Moderate</span>
+                            <span class="scale-range">(51-100)</span>
+                        </div>
+                        <div class="scale-item">
+                            <span class="scale-color" style="background: #ff7e00;"></span>
+                            <span class="scale-label">Unhealthy for Sensitive Groups</span>
+                            <span class="scale-range">(101-150)</span>
+                        </div>
+                        <div class="scale-item">
+                            <span class="scale-color" style="background: #ff0000;"></span>
+                            <span class="scale-label">Unhealthy</span>
+                            <span class="scale-range">(151-200)</span>
+                        </div>
+                        <div class="scale-item">
+                            <span class="scale-color" style="background: #8f3f97;"></span>
+                            <span class="scale-label">Very Unhealthy</span>
+                            <span class="scale-range">(201+)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="aqi-gauge-container">
+                        <div class="aqi-gauge">
+                            <div class="gauge-ring"></div>
+                            <div class="gauge-value">
+                                <span id="aqi-number">--</span>
+                                <span class="aqi-label">AQI</span>
+                            </div>
+                        </div>
+                        <div id="aqi-status" class="gauge-status">Initializing...</div>
+                    </div>
+                </div>
+                <div class="aqi-info">
+                    <h3>AQI-Based Recommendations</h3>
+                    <div class="recommendations-container">
+                        <div id="aqi-recommendations" class="recommendations-list">
+                            <!-- AI-powered recommendations will be inserted here -->
+                        </div>
+                        <div class="recommendations-note">
+                            <p>* Recommendations are updated every 10 seconds based on current AQI levels.</p>
+                            <p>* Please follow local health guidelines for specific conditions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="EcoFarm Logo">
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#info-section">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact" id="contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@biobloom.in</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+    
+                    <!-- Social Media Icons -->
+                    <div class="social-icons">
+                        <a href="https://instagram.com" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BioBloom Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load dependencies first -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.6.1/justgage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <!-- Load our scripts -->
+    <script src="chart.js"></script>
+    <script src="aqi.js"></script>
+    <script src="script.js"></script>
+    <script src="userMenu.js"></script>
+</body>
+</html>
+
